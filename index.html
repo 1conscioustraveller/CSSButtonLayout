@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Buttons</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a2e;
+            font-family: Arial, sans-serif;
+        }
+        
+        .phone-container {
+            width: 720px;
+            height: 1080px;
+            background: #300030;
+            border: 2px solid #ffffff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        .action-button {
+            width: 100px;
+            height: 100px;
+            background: #ff33cc;
+            border: none;
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+                        inset 0 2px 4px rgba(255, 255, 255, 0.5);
+            transition: all 0.2s ease;
+        }
+        
+        .action-button:hover {
+            transform: scale(1.1);
+            background: #ff55dd;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4),
+                        inset 0 2px 4px rgba(255, 255, 255, 0.6);
+        }
+        
+        .action-button:active {
+            transform: scale(0.95);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2),
+                        inset 0 1px 2px rgba(255, 255, 255, 0.4);
+        }
+        
+        .coordinates {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 10px;
+            transform: translate(-50%, -70%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-container">
+        <!-- Buttons placed at specified coordinates -->
+        <button class="action-button" style="left: 110px; top: 683px;"></button>
+        <button class="action-button" style="left: 80px; top: 451px;"></button>
+        <button class="action-button" style="left: 190px; top: 253px;"></button>
+        <button class="action-button" style="left: 280px; top: 100px;"></button>
+        <button class="action-button" style="left: 400px; top: 670px;"></button>
+        <button class="action-button" style="left: 320px; top: 490px;"></button>
+        <button class="action-button" style="left: 420px; top: 331px;"></button>
+        <button class="action-button" style="left: 550px; top: 150px;"></button>
+        <button class="action-button" style="left: 500px; top: 900px;"></button>
+        <button class="action-button" style="left: 300px; top: 900px;"></button>
+        <button class="action-button" style="left: 100px; top: 900px;"></button>
+        
+        <!-- Coordinate labels (optional) -->
+        <div class="coordinates" style="left: 110px; top: 683px;">(110, 683)</div>
+        <div class="coordinates" style="left: 80px; top: 451px;">(80, 451)</div>
+        <div class="coordinates" style="left: 190px; top: 253px;">(190, 253)</div>
+        <div class="coordinates" style="left: 280px; top: 100px;">(280, 100)</div>
+        <div class="coordinates" style="left: 400px; top: 670px;">(400, 670)</div>
+        <div class="coordinates" style="left: 320px; top: 490px;">(320, 490)</div>
+        <div class="coordinates" style="left: 420px; top: 331px;">(420, 331)</div>
+        <div class="coordinates" style="left: 550px; top: 150px;">(550, 150)</div>
+        <div class="coordinates" style="left: 500px; top: 900px;">(500, 900)</div>
+        <div class="coordinates" style="left: 300px; top: 900px;">(300, 900)</div>
+        <div class="coordinates" style="left: 100px; top: 900px;">(100, 900)</div>
+    </div>
+</body>
+</html>
